@@ -1,0 +1,52 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0px;
+    font-family: "微軟正黑體";
+    min-height: 100vh;
+}
+
+.body1 {
+    background-color: #DDDDDD;
+    min-height: 100vh;
+}
+
+.body2 {
+    background-color: #DDDDDD;
+    max-width: 1000px;
+    margin: 0px auto;
+    min-height: 100vh;
+}
+
+.top1 {
+    background-color: #00AA99;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.content {
+    background-color: #99CCBB;
+    min-height: calc(100vh - 150px);
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.ol1 {
+    line-height: 50px;
+}
+
+.link1 {
+    text-align: center;
+}
