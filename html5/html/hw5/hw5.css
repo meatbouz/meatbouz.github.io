@@ -3,9 +3,16 @@
 }
 
 .menu1 {
+<<<<<<< HEAD:html5/html/hw5/hw5.css
     height: 120px;
     line-height: 120px;
     background-color: #00CCAA;
+=======
+    max-width: 600px;
+    height: 120px;
+    line-height: 120px;
+    background-color: #66CCAA;
+>>>>>>> origin/master:html5/hw3/hw3.css
     position: relative;
     margin-top: 0px;
 }
@@ -31,10 +38,17 @@
     height: 240px;
     text-align: center;
     line-height: 80px;
+<<<<<<< HEAD:html5/html/hw5/hw5.css
     background-color: #20B2AA;
     position: absolute;
     margin-top: 0px;
     margin-left: 240px;
+=======
+    background-color: #00CCAA;
+    position: absolute;
+    top: 270px;
+    margin-left: 400px;
+>>>>>>> origin/master:html5/hw3/hw3.css
 }
 
 .ul_3t li a {
