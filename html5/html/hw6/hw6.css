@@ -1,0 +1,43 @@
+.left,
+.middle,
+.right {
+    float: left;
+    min-height: calc(100vh - 140px - 40px);
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px;
+    color: #595959;
+}
+
+.left {
+    min-width: 25%;
+    background-color: #99CCBB;
+}
+
+.middle {
+    min-width: 50%;
+    background-color: #66CCAA;
+    text-align: center;
+}
+
+.right {
+    min-width: 25%;
+    background-color: #99CCBB;
+    text-align: right;
+}
+
+.footer {
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #00AA99;
+    color: #595959;
+}
+
+.link1 {
+    position: relative;
+    margin-top: 200px;
+}
