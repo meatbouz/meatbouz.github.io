@@ -1,0 +1,160 @@
+.nav {
+    background-color: #04294e;
+    height: 110px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .container .pull-left {
+    font-size: 30px;
+    padding: 40px 20px 0px 0px;
+}
+
+.navbar .container .pull-right {
+    font-size: 15px;
+    padding: 45px 0px 0px 20px;
+}
+
+.navbar .container .pull-right li {
+    padding-left: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.jumbotron {
+    margin-top: 110px;
+    position: relative;
+    background-color: #00DDAA;
+    height: 650px;
+}
+
+.glyphicon-star {
+    font-size: 35px;
+}
+
+.jumbotron .container a {
+    text-decoration: none;
+}
+
+.link1 {
+    color: yellow;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "微軟正黑體";
+}
+
+.div1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.div2 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.hr1 {
+    width: 100px;
+    size: 20;
+    display: inline-block;
+}
+
+.jumbotron .container .row {
+    text-align: center;
+    color: white;
+}
+
+.jumbotron .container .row img {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.portfolio .container {
+    font-size: 50px;
+    font-weight: bold;
+    color: #04294e;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about {
+    background-color: #00EEAA;
+}
+
+.about .container {
+    background-color: #00EEAA;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.about .container .row1 {
+    margin: 0px auto;
+    width: 700px;
+    text-align: center;
+}
+
+.about .container .row .col-md-6 {
+    padding: 20px;
+    text-align: center;
+}
+
+.about .container .row .col-md-6 p {
+    font-size: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.contact .container {
+    font-size: 50px;
+    font-weight: bold;
+    color: #04294e;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.form-control {
+    margin: 0px auto;
+    width: 800px;
+}
+
+.footer1 {
+    background-color: #003377;
+    color: white;
+}
+
+.footer1 .container {
+    padding-top: 60px;
+    height: 250px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer1 .container .row .col-md-4 p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.footer1 .container a {
+    color: yellow;
+}
+
+.footer2 {
+    background-color: #04294e;
+    height: 70px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
