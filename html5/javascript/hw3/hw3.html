@@ -6,25 +6,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../font-awesome-4.5.0/css/font-awesome.css">
     <link type="text/css" rel="stylesheet" href="../../css/css_all.css" />
+    <link rel="stylesheet" type="text/css" href="../css/js_css.css">
     <style type="text/css">
     .text {
-        margin: 0px 30px 0px 30px;
-        width: 100px;
-        height: 50px;
-        background-color: #DDDDDD;
-        font-size: 23px;
-        font-family: "微軟正黑體";
-        color: #595959;
-    }
-    
-    button {
-        color: #595959;
-        width: 100px;
-        height: 50px;
-        font-family: "微軟正黑體";
-        font-size: 23px;
-        font-weight: bold;
-        border-radius: 5px;
+        margin-right: 30px;
     }
     </style>
     <script type="text/javascript" src="../../js/index.js"></script>
@@ -78,8 +63,11 @@
         <section class="content" id="content">
             <br/>
             <br/>
-            <input type="number" id="num" class="text" />
-            <button onclick="check();">送出</button>
+            <div class="js_div">
+                請輸入一個數字：
+                <input type="number" id="num" class="text" />
+                <button class="btn" onclick="check();">送出</button>
+            </div>
             <br/>
             <br/>
             <div class="link1">

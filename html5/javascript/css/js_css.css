@@ -1,0 +1,31 @@
+body {
+    color: #595959;
+}
+
+.text {
+    width: 100px;
+    height: 50px;
+    background-color: #DDDDDD;
+    font-size: 23px;
+    font-family: "微軟正黑體";
+    color: #595959;
+}
+
+form {
+    margin-left: 30px;
+}
+
+.btn {
+    color: #595959;
+    width: 100px;
+    height: 50px;
+    font-family: "微軟正黑體";
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #009393;
+}
+
+.js_div {
+    margin-left: 30px;
+}
