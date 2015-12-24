@@ -1,5 +1,4 @@
 function init(j) {
-    document.getElementById("nav0_con").style.display = "block";
     document.getElementById("nav0_con").className = "nav0_con0";
     hide_all2(j);
     reSize();
@@ -76,3 +75,18 @@ function show(id1) {
     reSize();
 }
 */
+
+function chgImg(id, chg) {
+    var m_id = document.getElementById(id);
+    var m_src = m_id.src;
+    var m_index = m_src.lastIndexOf(".jpg") - 1;
+    var m_num = Number(m_src.substring(m_index, m_index + 1));
+
+    if (chg === 0) {
+        m_num++;
+    } else {
+        m_num--;
+    }
+
+    m_id.src = m_src.substring(0, m_index) + m_num + ".jpg";
+}

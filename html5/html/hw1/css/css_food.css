@@ -1,14 +1,17 @@
 .img1 {
+    margin: 0px 10px;
     width: 450px;
     height: 350px;
 }
 
 .img2 {
+    margin: 0px 5px;
     width: 350px;
     height: 450px;
 }
 
 .img3 {
+    margin: 0px 5px;
     width: 600px;
     height: 450px;
 }

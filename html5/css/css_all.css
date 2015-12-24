@@ -48,6 +48,13 @@ a {
     background-color: #008877;
 }
 
+.navfixed {
+    position: fixed;
+    top: 0px;
+    margin-left: 0px;
+    min-width: 1000px;
+}
+
 .nav_ul {
     margin: 0px;
     padding: 0px 0px 0px 25px;
@@ -112,6 +119,63 @@ a {
     font-weight: bold;
 }
 
+.fa-heart,
+.fa-glass,
+.fa-asterisk {
+    color: #008877;
+}
+
+.fa-heart {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;
+    }
+}
+
+.into {
+    background-color: #66EEBB;
+    color: #008877;
+    border-radius: 8px;
+}
+
+.leave {
+    background-color: transparent;
+    color: #88CCBB;
+    border-radius: 0px;
+}
+
 .nav0_con0 {
     height: 750px;
     background: url(../img/img00.jpg);
@@ -145,16 +209,51 @@ a {
     background-size: cover;
 }
 
-.into {
-    background-color: #66EEBB;
-    color: #008877;
-    border-radius: 8px;
+.div_t1,
+.div_f1 {
+    margin: 0px auto;
 }
 
-.leave {
-    background-color: transparent;
-    color: #88CCBB;
-    border-radius: 0px;
+.img1_i {
+    margin: 0px 30px;
+    width: 350px;
+    height: 263px;
+}
+
+.img2_i {
+    margin: 0px 10px;
+    width: 300px;
+    height: 225px;
+}
+
+.img3 {
+    width: 600px;
+    height: 450px;
+}
+
+.nav1_con_i,
+.nav3_con_i {
+    background-color: #00AA99;
+}
+
+.nav1_con_i .fa-heart,
+.nav3_con_i .fa-heart {
+    color: #66EEBB;
+}
+
+.nav2_con,
+.nav4_con {
+    text-align: center;
+    color: #595959;
+}
+
+.space {
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    height: 3px;
+    background-color: #008877;
 }
 
 .ul1 {
@@ -164,10 +263,8 @@ a {
     color: #595959;
 }
 
-.fa-heart,
-.fa-glass,
-.fa-asterisk {
-    color: #008877;
+.ul1 a {
+    color: #004D99;
 }
 
 .link1 {

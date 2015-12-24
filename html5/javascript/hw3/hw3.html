@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.5.0/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="../../css/css_all.css" />
+    <style type="text/css">
+    .text {
+        margin-left: 30px;
+        width: 100px;
+        height: 30px;
+    }
+    
+    button {
+        width: 80px;
+        height: 30px;
+    }
+    </style>
+    <script type="text/javascript" src="../../js/index.js"></script>
+    <script type="text/javascript">
+    //var x1 = prompt("請輸入一個正整數", "");
+
+    function check() {
+        var num = document.getElementById("num").value;
+        if (!isNaN(num) && (parseInt(num) > 0)) {
+            var boolean1 = true;
+            num = parseInt(num);
+            for (var i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    boolean1 = false;
+                    break;
+                }
+            }
+
+            if (boolean1) {
+                alert(num + " 為質數");
+            } else {
+                alert(num + " 非質數");
+            }
+
+        } else {
+            alert("輸入錯誤");
+        }
+    }
+    </script>
+    <title>判斷是否為質數</title>
+</head>
+
+<body onload="init2(3);">
+    <div class="body1" id="body1">
+        <header class="header1" id="header1">
+            是否為質數
+        </header>
+        <nav class="topnav" id="topnav">
+            <ul class="nav_ul">
+                <li>
+                    <a href="../../index.html" id="nav0">
+                        <i class="fa fa-home"></i>&nbsp;&nbsp;Home
+                    </a>
+                </li>
+                <li><a href="../../html.html" id="nav1">Html</a></li>
+                <li><a href="../../food/food.html" id="nav2">Food</a></li>
+                <li><a href="../js.html" id="nav3">JavaScript</a></li>
+                <li><a href="../../travel/travel.html" id="nav4">Travel</a></li>
+            </ul>
+        </nav>
+        <section class="content" id="content">
+            <br/>
+            <br/>
+            <input type="number" id="num" class="text" />
+            <button onclick="check();">check</button>
+            <br/>
+            <br/>
+            <div class="link1">
+                <a href="../hw4/hw4.html"><i class="fa fa-cog"></i>&nbsp;作業四</a>
+            </div>
+            <br/>
+            <br/>
+        </section>
+        <footer>
+            Copyright&nbsp;©&nbsp;2015&nbsp;&nbsp;Tammy&nbsp;Lin,&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved
+        </footer>
+    </div>
+</body>
+
+</html>

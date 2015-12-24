@@ -44,8 +44,8 @@ button {
 }
 
 img {
-    width: 250px;
-    height: 156px;
+    width: 100%;
+    height: 100%;
 }
 
 .row1 {
@@ -63,11 +63,9 @@ img {
 
 div[id^="box"] {
     margin: 0px auto;
-    margin: 10px 3px 10px 3px;
     float: left;
     padding: 5px;
     border: 1px solid #969696;
-    width: 260px;
 }
 
 div[id^="box"] p {
@@ -86,10 +84,11 @@ div[id^="box"] p {
 }
 
 @media screen and (min-width: 1201px) {
+    /*
     .row1,
     .topnav {
         width: 100%;
-    }
+    }*/
     .col-md-1 {
         width: 8.33%;
     }
@@ -129,10 +128,12 @@ div[id^="box"] p {
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
+    /*
     .row1,
     .topnav {
         width: 50%;
     }
+    */
     .col-sm-1 {
         width: 8.33%;
     }
@@ -172,9 +173,11 @@ div[id^="box"] p {
 }
 
 @media screen and (max-width: 600px) {
+    /*
     .row1 {
         width: 25%;
     }
+    */
     .topnav {
         position: relative;
         min-height: 80px;
