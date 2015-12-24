@@ -6,23 +6,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../font-awesome-4.5.0/css/font-awesome.css">
     <link type="text/css" rel="stylesheet" href="../../css/css_all.css" />
-    <style type="text/css">
-    .text {
-        width: 80px;
-        height: 20px;
-    }
-    
-    form {
-        margin-left: 30px;
-    }
-    
-    .btn {
-        width: 80px;
-        height: 30px;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css/js_css.css">
     <script type="text/javascript" src="../../js/index.js"></script>
-    <script type="text/javascript" src="hw4.js"></script>
     <script type="text/javascript">
     function send() {
         var x11 = document.getElementById("x11").value;
@@ -33,23 +18,19 @@
         var y21 = document.getElementById("y21").value;
         var x22 = document.getElementById("x22").value;
         var y22 = document.getElementById("y22").value;
-
         if (x11.length === 0 || y11.length === 0 || x12.length === 0 || y12.length === 0 || x21.length === 0 || y21.length === 0 || x22.length === 0 || y22.length === 0) {
             alert("輸入不完整");
             return;
         }
-
         // 座標相同
         if (x11 == x12 && y11 == y12) {
             alert("第一個線段座標相同，請重新輸入");
             return;
         }
-
         if (x21 == x22 && y21 == y22) {
             alert("第二個線段座標相同，請重新輸入");
             return;
         }
-
         var line1 = new Line(x11, y11, x12, y12);
         var line2 = new Line(x21, y21, x22, y22);
         var is_p = isParallel(line1.slope, line2.slope);
@@ -60,9 +41,7 @@
 
 <body onload="init2(3);">
     <div class="body1" id="body1">
-        <header class="header1" id="header1">
-            判斷兩個線段是否平行
-        </header>
+        <header class="header1" id="header1">判斷兩個線段是否平行</header>
         <nav class="topnav" id="topnav">
             <ul class="nav_ul">
                 <li>
@@ -70,7 +49,7 @@
                         <i class="fa fa-home"></i>&nbsp;&nbsp;Home
                     </a>
                 </li>
-                <li><a href="../../html.html" id="nav1">Html</a></li>
+                <li><a href="../../html/html.html" id="nav1">Html</a></li>
                 <li><a href="../../food/food.html" id="nav2">Food</a></li>
                 <li><a href="../js.html" id="nav3">JavaScript</a></li>
                 <li><a href="../../travel/travel.html" id="nav4">Travel</a></li>
@@ -79,17 +58,16 @@
         <section class="content" id="content">
             <br/>
             <br/>
-            <form action="">
-                請輸入第一個線段座標: x1:&nbsp;
-                <input type="number" id="x11" class="text" />&nbsp; y1:&nbsp;
-                <input type="number" id="y11" class="text" />&nbsp; x2:&nbsp;
-                <input type="number" id="x12" class="text" />&nbsp; y2:&nbsp;
+            <form action="">請輸入第一個線段座標:&nbsp;&nbsp;x1:&nbsp;
+                <input type="number" id="x11" class="text" />&nbsp;y1:&nbsp;
+                <input type="number" id="y11" class="text" />&nbsp;x2:&nbsp;
+                <input type="number" id="x12" class="text" />&nbsp;y2:&nbsp;
                 <input type="number" id="y12" class="text" />&nbsp;
                 <br/>
-                <br/> 請輸入第二個線段座標: x1:&nbsp;
-                <input type="number" id="x21" class="text" />&nbsp; y1:&nbsp;
-                <input type="number" id="y21" class="text" />&nbsp; x2:&nbsp;
-                <input type="number" id="x22" class="text" />&nbsp; y2:&nbsp;
+                <br/>請輸入第二個線段座標:&nbsp;&nbsp;x1:&nbsp;
+                <input type="number" id="x21" class="text" />&nbsp;y1:&nbsp;
+                <input type="number" id="y21" class="text" />&nbsp;x2:&nbsp;
+                <input type="number" id="x22" class="text" />&nbsp;y2:&nbsp;
                 <input type="number" id="y22" class="text" />&nbsp;
                 <br/>
                 <br/>
@@ -98,10 +76,8 @@
             <br/>
             <br/>
             <div class="link1">
-                <a href="../hw3/hw3.html">
-                    <i class="fa fa-cog"></i>&nbsp;作業三
-                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="../hw5/hw5.html" target="_blank"><i class="fa fa-cog"></i>&nbsp;作業五</a>
+                <a href="../hw3/hw3.html"><i class="fa fa-cog"></i>&nbsp;作業三</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="../hw5/hw5.html"><i class="fa fa-cog"></i>&nbsp;作業五</a>
             </div>
             <br/>
             <br/>

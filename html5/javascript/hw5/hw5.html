@@ -1,48 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8" />
-	<title>tab</title>
-	<link type="text/css" rel="stylesheet" href="hw5.css" />
-	<script type="text/javascript" src="hw5.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.5.0/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="../../css/css_all.css" />
+    <link rel="stylesheet" type="text/css" href="../css/js_css.css">
+    <link type="text/css" rel="stylesheet" href="hw5.css" />
+    <script type="text/javascript" src="../../js/index.js"></script>
+    <script type="text/javascript" src="hw5.js"></script>
+    <title>tab</title>
 </head>
-<body>
-<h1>電影</h1>
-<div>
-	<ul class="ul1">
-		<li id="tab1" class="display1"><a href="#" onclick="chg(1);">熱門排行</a></li>
-		<li id="tab2" class="hide1"><a href="#" onclick="chg(2);">本週新片</a></li>
-		<li id="tab3" class="hide1"><a href="#" onclick="chg(3);">即將上映</a></li>
-	</ul>
-</div>
-<div id="content" class="content">
-	<div id="hot" class="display2">
-		<div class="float1"><h4>飆風特攻</h4><img src="img/tab1_1.jpg"/></div>
-		<div class="float1"><h4>追婚日記</h4><img src="img/tab1_2.jpg"/></div>
-		<div class="float1"><h4>白鯨傳奇：怒海之心</h4><img src="img/tab1_3.jpg"/></div>
-		<div class="float1"><h4>飢餓遊戲：自由幻夢終結戰</h4><img src="img/tab1_4.jpg"/></div>
-		<div class="float1"><h4>紅衣小女孩</h4><img src="img/tab1_5.jpg"/></div>
-		<div class="float1"><h4>陀地驅魔人</h4><img src="img/tab1_6.jpg"/></div>
-		<div class="clear"></div>
-	</div>
-	<div id="news" class="hide2">
-		<div class="float1"><h4>STAR&nbsp;WARS：原力覺醒</h4><img src="img/tab2_1.jpg"/></div>
-		<div class="float1"><h4>他們在島嶼寫作II ─《無岸之河》洛夫</h4><img src="img/tab2_2.jpg"/></div>
-		<div class="float1"><h4>意外製造公司</h4><img src="img/tab2_3.jpg"/></div>
-		<div class="float1"><h4>尋龍訣</h4><img src="img/tab2_4.jpg"/></div>
-		<div class="float1"><h4>是誰在造神？</h4><img src="img/tab2_5.jpg"/></div>
-		<div class="float1"><h4>聖誕好家在</h4><img src="img/tab2_6.jpg"/></div>
-		<div class="clear"></div>
-	</div>
-	<div id="soon" class="hide2">
-		<div class="float1"><h4>史努比</h4><img src="img/tab3_1.jpg"/></div>
-		<div class="float1"><h4>紐約愛未眠</h4><img src="img/tab3_2.jpg"/></div>
-		<div class="float1"><h4>天聲男孩</h4><img src="img/tab3_3.jpg"/></div>
-		<div class="float1"><h4>真相急先鋒</h4><img src="img/tab3_4.jpg"/></div>
-		<div class="float1"><h4>真愛慢熟中</h4><img src="img/tab3_5.jpg"/></div>
-		<div class="float1"><h4>我心深愛的國王</h4><img src="img/tab3_6.jpg"/></div>
-		<div class="clear"></div>
-	</div>
-</div>
+
+<body onload="init2(3);">
+    <div class="body1" id="body1">
+        <header class="header1" id="header1">電影</header>
+        <nav class="topnav" id="topnav">
+            <ul class="nav_ul">
+                <li>
+                    <a href="../../index.html" id="nav0"> <i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+                </li>
+                <li><a href="../../html/html.html" id="nav1">Html</a></li>
+                <li><a href="../../food/food.html" id="nav2">Food</a></li>
+                <li><a href="../js.html" id="nav3">JavaScript</a></li>
+                <li><a href="../../travel/travel.html" id="nav4">Travel</a></li>
+            </ul>
+        </nav>
+        <section class="content" id="content">
+            <div>
+                <ul class="js_ul1">
+                    <li id="tab1" class="display1"><a href="#" onclick="chg(1);">熱門排行</a></li>
+                    <li id="tab2" class="hide1"><a href="#" onclick="chg(2);">本週新片</a></li>
+                    <li id="tab3" class="hide1"><a href="#" onclick="chg(3);">即將上映</a></li>
+                </ul>
+            </div>
+            <div id="js_content" class="js_content">
+                <div id="hot" class="display2">
+                    <div class="float1">
+                        <p>飆風特攻</p><img src="img/tab1_1.jpg" /></div>
+                    <div class="float1">
+                        <p>追婚日記</p><img src="img/tab1_2.jpg" /></div>
+                    <div class="float1">
+                        <p>白鯨傳奇：怒海之心</p><img src="img/tab1_3.jpg" /></div>
+                    <div class="float1">
+                        <p>飢餓遊戲：自由幻夢終結戰</p><img src="img/tab1_4.jpg" /></div>
+                    <div class="float1">
+                        <p>紅衣小女孩</p><img src="img/tab1_5.jpg" /></div>
+                    <div class="float1">
+                        <p>陀地驅魔人</p><img src="img/tab1_6.jpg" /></div>
+                    <div class="clear"></div>
+                </div>
+                <div id="news" class="hide2">
+                    <div class="float1">
+                        <p>STAR&nbsp;WARS：原力覺醒</p><img src="img/tab2_1.jpg" /></div>
+                    <div class="float1">
+                        <p>他們在島嶼寫作II ─《無岸之河》洛夫</p><img src="img/tab2_2.jpg" /></div>
+                    <div class="float1">
+                        <p>意外製造公司</p><img src="img/tab2_3.jpg" /></div>
+                    <div class="float1">
+                        <p>尋龍訣</p><img src="img/tab2_4.jpg" /></div>
+                    <div class="float1">
+                        <p>是誰在造神？</p><img src="img/tab2_5.jpg" /></div>
+                    <div class="float1">
+                        <p>聖誕好家在</p><img src="img/tab2_6.jpg" /></div>
+                    <div class="clear"></div>
+                </div>
+                <div id="soon" class="hide2">
+                    <div class="float1">
+                        <p>史努比</p><img src="img/tab3_1.jpg" /></div>
+                    <div class="float1">
+                        <p>紐約愛未眠</p><img src="img/tab3_2.jpg" /></div>
+                    <div class="float1">
+                        <p>天聲男孩</p><img src="img/tab3_3.jpg" /></div>
+                    <div class="float1">
+                        <p>真相急先鋒</p><img src="img/tab3_4.jpg" /></div>
+                    <div class="float1">
+                        <p>真愛慢熟中</p><img src="img/tab3_5.jpg" /></div>
+                    <div class="float1">
+                        <p>我心深愛的國王</p><img src="img/tab3_6.jpg" /></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="link1">
+                <a href="../hw4/hw4.html"><i class="fa fa-cog"></i>&nbsp;作業四</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="../hw6/hw6.html" target="_blank"><i class="fa fa-cog"></i>&nbsp;作業六</a>
+            </div>
+            <br/>
+            <br/>
+        </section>
+        <footer>
+            Copyright&nbsp;©&nbsp;2015&nbsp;&nbsp;Tammy&nbsp;Lin,&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved
+        </footer>
+    </div>
 </body>
+
 </html>
