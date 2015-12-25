@@ -76,8 +76,8 @@ function show(id1) {
 }
 */
 
-function chgImg(id, chg) {
-    var m_id = document.getElementById(id);
+function chgImg(chgid, chg) {
+    var m_id = document.getElementById(chgid);
     var m_src = m_id.src;
     var m_index = m_src.lastIndexOf(".jpg") - 1;
     var m_num = Number(m_src.substring(m_index, m_index + 1));

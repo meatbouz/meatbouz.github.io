@@ -1,75 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8" />
-	<title>Box Move</title>
-	<style type="text/css">
-		.box{
-			width: 100px;
-			height: 100px;
-			background-color: black;
-			position: absolute;
-			top: 100px;
-			left: 100px;
-		}
-	</style>
-	<script type="text/javascript">
-		var box;
-		
-		/*
-		// box座標
-		var x1;
-		var y1;
-		*/
-		
-		// 座標距離長度
-		var x_len;
-		var y_len;
-		
-		function init(){
-			box = document.getElementById("box");
-			box.addEventListener("mousedown", pickup);
-			box.addEventListener("mouseup", putdown);
-		}
-		
-		function pickup(e){
-			/*
-			x1 = box.offsetLeft;
-			y1 = box.offsetTop;
-			x_len = e.clientX - x1;
-			y_len = e.clientY - y1;
-			*/
-			x_len = e.clientX - box.offsetLeft;
-			y_len = e.clientY - box.offsetTop;
-			document.addEventListener("mousemove", move);
-			/*
-			box.removeEventListener("mousedown", pickup);
-			box.addEventListener("mouseup", putdown);
-			*/
-		}
-		
-		function move(e){
-			box.style.left = (e.clientX - x_len) + "px";
-			box.style.top = (e.clientY - y_len) + "px";
-		}
-		
-		function putdown(e){
-			/*
-			x1 = box.offsetLeft;
-			y1 = box.offsetTop;
-			x_len = e.clientX - x1;
-			y_len = e.clientY - y1;
-			*/
-			document.removeEventListener("mousemove", move);
-			/*
-			box.addEventListener("mousedown", pickup);
-			box.removeEventListener("mouseup", putdown);
-			*/
-		}
-	</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../font-awesome-4.5.0/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="../../css/css_all.css" />
+    <link rel="stylesheet" type="text/css" href="../css/js_css.css">
+    <link rel="stylesheet" type="text/css" href="hw6.css">
+    <script type="text/javascript" src="../../js/index.js"></script>
+    <script type="text/javascript" src="hw6.js"></script>
+    <title>Box Moving</title>
 </head>
-<body onload="init();">
-	<div class="box" id="box">
-	</div>
+
+<body onload="init2(3);">
+    <div class="body1" id="body1">
+        <header class="header1" id="header1">Box&nbsp;Moving</header>
+        <nav class="topnav" id="topnav">
+            <ul class="nav_ul">
+                <li>
+                    <a href="../../index.html" id="nav0">
+                        <i class="fa fa-home"></i>&nbsp;&nbsp;Home
+                    </a>
+                </li>
+                <li><a href="../../html/html.html" id="nav1">Html</a></li>
+                <li><a href="../../food/food.html" id="nav2">Food</a></li>
+                <li><a href="../js.html" id="nav3">JavaScript</a></li>
+                <li><a href="../../travel/travel.html" id="nav4">Travel</a></li>
+            </ul>
+        </nav>
+        <section class="content" id="content">
+            <br/>
+            <br/>
+            <p>請在箱子上方點選滑鼠，可移動箱子。</p>
+            <div onmouseover="init_box();" class="box" id="box">
+            </div>
+            <br/>
+            <br/>
+            <div class="link1">
+                <a href="../hw5/hw5.html"><i class="fa fa-cog"></i>&nbsp;作業五</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><i class="fa fa-cog"></i>&nbsp;作業七</a>
+            </div>
+        </section>
+        <footer>
+            Copyright&nbsp;©&nbsp;2015&nbsp;&nbsp;Tammy&nbsp;Lin,&nbsp;&nbsp;All&nbsp;rights&nbsp;reserved
+        </footer>
+    </div>
 </body>
+
 </html>

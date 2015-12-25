@@ -13,32 +13,7 @@
     }
     </style>
     <script type="text/javascript" src="../../js/index.js"></script>
-    <script type="text/javascript">
-    //var x1 = prompt("請輸入一個正整數", "");
-
-    function check() {
-        var num = document.getElementById("num").value;
-        if (!isNaN(num) && (parseInt(num) > 0)) {
-            var boolean1 = true;
-            num = parseInt(num);
-            for (var i = 2; i < num; i++) {
-                if (num % i === 0) {
-                    boolean1 = false;
-                    break;
-                }
-            }
-
-            if (boolean1) {
-                alert(num + " 為質數");
-            } else {
-                alert(num + " 非質數");
-            }
-
-        } else {
-            alert("輸入錯誤");
-        }
-    }
-    </script>
+    <script type="text/javascript" src="hw3.js"></script>
     <title>判斷是否為質數</title>
 </head>
 

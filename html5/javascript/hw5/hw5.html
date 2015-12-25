@@ -10,12 +10,12 @@
     <link type="text/css" rel="stylesheet" href="hw5.css" />
     <script type="text/javascript" src="../../js/index.js"></script>
     <script type="text/javascript" src="hw5.js"></script>
-    <title>tab</title>
+    <title>電影分頁</title>
 </head>
 
 <body onload="init2(3);">
     <div class="body1" id="body1">
-        <header class="header1" id="header1">電影</header>
+        <header class="header1" id="header1">電影分頁</header>
         <nav class="topnav" id="topnav">
             <ul class="nav_ul">
                 <li>
@@ -30,13 +30,13 @@
         <section class="content" id="content">
             <div>
                 <ul class="js_ul1">
-                    <li id="tab1" class="display1"><a href="#" onclick="chg(1);">熱門排行</a></li>
-                    <li id="tab2" class="hide1"><a href="#" onclick="chg(2);">本週新片</a></li>
-                    <li id="tab3" class="hide1"><a href="#" onclick="chg(3);">即將上映</a></li>
+                    <li id="tab1" class="display1" onclick="chgM(this.id);"><a href="#">熱門排行</a></li>
+                    <li id="tab2" class="hide1" onclick="chgM(this.id);"><a href="#">本週新片</a></li>
+                    <li id="tab3" class="hide1" onclick="chgM(this.id);"><a href="#">即將上映</a></li>
                 </ul>
             </div>
             <div id="js_content" class="js_content">
-                <div id="hot" class="display2">
+                <div id="tab1_con" class="display2">
                     <div class="float1">
                         <p>飆風特攻</p><img src="img/tab1_1.jpg" /></div>
                     <div class="float1">
@@ -51,7 +51,7 @@
                         <p>陀地驅魔人</p><img src="img/tab1_6.jpg" /></div>
                     <div class="clear"></div>
                 </div>
-                <div id="news" class="hide2">
+                <div id="tab2_con" class="hide2">
                     <div class="float1">
                         <p>STAR&nbsp;WARS：原力覺醒</p><img src="img/tab2_1.jpg" /></div>
                     <div class="float1">
@@ -66,7 +66,7 @@
                         <p>聖誕好家在</p><img src="img/tab2_6.jpg" /></div>
                     <div class="clear"></div>
                 </div>
-                <div id="soon" class="hide2">
+                <div id="tab3_con" class="hide2">
                     <div class="float1">
                         <p>史努比</p><img src="img/tab3_1.jpg" /></div>
                     <div class="float1">
@@ -86,7 +86,7 @@
             <br/>
             <div class="link1">
                 <a href="../hw4/hw4.html"><i class="fa fa-cog"></i>&nbsp;作業四</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="../hw6/hw6.html" target="_blank"><i class="fa fa-cog"></i>&nbsp;作業六</a>
+                <a href="../hw6/hw6.html"><i class="fa fa-cog"></i>&nbsp;作業六</a>
             </div>
             <br/>
             <br/>
